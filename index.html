@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ইমেইল মার্কেটিং মাস্টারি – ই-বুক</title>
+  <meta name="description" content="ইমেইল মার্কেটিং মাস্টারি ই-বুক—লিস্ট বিল্ডিং, কপি রাইটিং, অটোমেশন, টেমপ্লেট ও কেস স্টাডি। এখনই কিনুন এবং বিক্রি বাড়ান।" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="ইমেইল মার্কেটিং মাস্টারি – ই-বুক" />
+  <meta property="og:description" content="প্র্যাকটিকাল গাইড + টেমপ্লেট + কেস স্টাডি। এখনই কিনুন।" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="cover.jpg" />
+  <meta property="og:url" content="https://your-domain.com/ebook-email-marketing" />
+  <style>
+    :root{
+      --bg:#0f172a;--grad1:#0ea5e9;--grad2:#22d3ee;--card:#0b1220;--muted:#94a3b8;--accent:#22c55e;--warn:#f59e0b;--white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:'Noto Sans Bengali',system-ui,-apple-system,Segoe UI,Roboto,Arial,"Helvetica Neue",sans-serif;background:linear-gradient(180deg,#0b1020,#0b1020 40%,#0f172a);color:var(--white)}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-flex;gap:10px;align-items:center;background:linear-gradient(135deg,var(--grad1),var(--grad2));color:#001827;padding:14px 22px;border-radius:14px;font-weight:700;box-shadow:0 10px 30px rgba(34,211,238,.25);transition:.2s;border:0}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(34,211,238,.35)}
+    .btn.outline{background:transparent;border:1px solid #334155;color:var(--white)}
+    header.hero{position:relative;overflow:hidden}
+    .hero-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:70px 0}
+    .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid #1f2937;color:var(--muted);border-radius:999px;padding:6px 12px;font-size:14px}
+    .title{font-size:42px;line-height:1.15;margin:.2em 0 .3em 0;font-weight:800}
+    .subtitle{color:var(--muted);font-size:18px}
+    .cover{background:linear-gradient(135deg,#1d4ed8,#06b6d4);border-radius:20px;padding:14px;box-shadow:0 30px 90px rgba(6,182,212,.25)}
+    .cover-inner{background:#0b1020;border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:14px}
+    .cover h3{margin:0;font-size:24px}
+    .cover small{color:var(--muted)}
+    .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px}
+    .secure{display:flex;gap:12px;align-items:center;margin-top:12px;color:var(--muted);font-size:14px}
+    .section{padding:56px 0}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid #172033;border-radius:16px;padding:20px}
+    .card h4{margin:0 0 8px 0}
+    .list{display:grid;gap:10px;margin-top:12px}
+    .list li{display:flex;gap:10px;align-items:flex-start;color:#dbeafe}
+    .list svg{flex:0 0 auto;margin-top:3px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+    .price{display:flex;align-items:baseline;gap:8px}
+    .price .now{font-size:40px;font-weight:800;color:#a7f3d0}
+    .price .old{text-decoration:line-through;color:#64748b}
+    .guarantee{background:#0c1a14;border:1px solid #123827;padding:18px;border-radius:14px;color:#c7f9df}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+    .kpi{background:#0b1326;border:1px solid #162341;padding:16px 14px;border-radius:14px;text-align:center}
+    .kpi strong{font-size:20px}
+    .sticky-bar{position:sticky;bottom:0;backdrop-filter:blur(8px);background:rgba(2,6,23,.75);border-top:1px solid #0b2942;padding:10px}
+    .sticky-inner{display:flex;gap:16px;justify-content:space-between;align-items:center}
+    .payment-logos{display:flex;gap:10px;flex-wrap:wrap;opacity:.9}
+    .faq{border:1px solid #132037;border-radius:16px;overflow:hidden}
+    .faq details{border-top:1px solid #132037}
+    .faq summary{cursor:pointer;padding:16px 18px;background:#0b1326;list-style:none}
+    .faq p{margin:0;padding:0 18px 18px 18px;color:#d6e3f8}
+    .testimonial{background:#0b1326;border:1px solid #14223b;border-radius:16px;padding:18px}
+    .author{display:flex;gap:12px;align-items:center;margin-top:8px;color:var(--muted)}
+    footer{color:#94a3b8;border-top:1px solid #0b2942;padding:30px 0;margin-top:50px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .countdown{font-variant-numeric:tabular-nums;font-weight:800}
+    .support-float{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:10px;z-index:50}
+    .support-float a{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:#10b981}
+    @media(max-width:960px){.hero-wrap{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.grid-2{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:1fr}}
+  </style>
+  <script>
+    // Simple countdown (48h from first load)
+    let end = localStorage.getItem('dealEnd');
+    if(!end){
+      const now = Date.now();
+      end = now + 48*60*60*1000; // 48h
+      localStorage.setItem('dealEnd', end);
+    }
+    function tick(){
+      const el = document.querySelector('.countdown');
+      if(!el) return;
+      const left = Math.max(0, end - Date.now());
+      const h = Math.floor(left/3600000);
+      const m = Math.floor((left%3600000)/60000).toString().padStart(2,'0');
+      const s = Math.floor((left%60000)/1000).toString().padStart(2,'0');
+      el.textContent = h+":"+m+":"+s;
+    }
+    setInterval(tick, 1000);
+    window.addEventListener('DOMContentLoaded', tick);
+  </script>
+</head>
+<body>
+  <!-- Sticky Buy Bar -->
+  <div class="sticky-bar">
+    <div class="container sticky-inner">
+      <div>⚡ সীমিত সময়ের অফার শেষ হতে: <span class="countdown">48:00:00</span></div>
+      <div class="hero-cta">
+        <a class="btn" href="#buy">📥 এখনই কিনুন</a>
+        <a class="btn outline" href="#sample">📄 ফ্রি স্যাম্পল দেখুন</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <span class="badge">📧 নতুনদের জন্য সম্পূর্ণ গাইড</span>
+        <h1 class="title">ইমেইল মার্কেটিং <span style="color:#5eead4">মাস্টারি</span> – শূন্য থেকে প্রফিট</h1>
+        <p class="subtitle">লিস্ট বিল্ডিং, কপি রাইটিং, অটোমেশন ও সেলস ফানেল—সব একসাথে। ১০০% প্র্যাকটিকাল টেমপ্লেট ও কেস স্টাডি সহ।</p>
+        <div class="hero-cta">
+          <a class="btn" href="#buy">🚀 এখনই শুরু করুন</a>
+          <a class="btn outline" href="#toc">📚 ভিতরে কী আছে</a>
+        </div>
+        <div class="secure">
+          <span>🔒 সিকিউর চেকআউট</span> · <span>💸 ৭ দিনের রিফান্ড গ্যারান্টি</span> · <span>📥 ইন্সট্যান্ট ডাউনলোড</span>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><strong>৫,০০০+</strong><div>ডাউনলোড</div></div>
+          <div class="kpi"><strong>৪.৮★</strong><div>রিভিউ রেটিং</div></div>
+          <div class="kpi"><strong>১২+</strong><div>টেমপ্লেট</div></div>
+          <div class="kpi"><strong>২০+</strong><div>ইমেইল স্ক্রিপ্ট</div></div>
+        </div>
+      </div>
+      <div class="cover" aria-hidden="true">
+        <div class="cover-inner">
+          <img alt="ই-বুক কভার" src="cover.jpg" style="width:100%;border-radius:12px;aspect-ratio:4/5;object-fit:cover;background:#0a1326" />
+          <h3>ইমেইল মার্কেটিং মাস্টারি</h3>
+          <small>PDF • 180 পৃষ্ঠা • আপডেটেড ২০২৫</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- What you'll learn -->
+  <section class="section">
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <h4>লিস্ট বিল্ডিং</h4>
+          <ul class="list">
+            <li>✅ অপ্ট-ইন ফর্ম ও লিড ম্যাগনেট</li>
+            <li>✅ ০→১০,০০০ সাবস্ক্রাইবার রোডম্যাপ</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>কপি রাইটিং</h4>
+          <ul class="list">
+            <li>✅ সাবজেক্ট লাইন ফর্মুলা</li>
+            <li>✅ ক্লিক বাড়ানো CTA টেমপ্লেট</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>অটোমেশন</h4>
+          <ul class="list">
+            <li>✅ ওয়েলকাম সিরিজ (৫-ইমেইল)</li>
+            <li>✅ অ্যাব্যান্ডন কার্ট রিকভারি</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>গ্রোথ ও অ্যানালিটিক্স</h4>
+          <ul class="list">
+            <li>✅ ডেলিভারেবিলিটি চেকলিস্ট</li>
+            <li>✅ KPI ড্যাশবোর্ড ট্র্যাকিং</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inside the book -->
+  <section id="toc" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h3>ভিতরে যা যা আছে</h3>
+        <ul class="list">
+          <li>📖 অধ্যায় ১–৩: ফাউন্ডেশন, নিস, অফার</li>
+          <li>📖 অধ্যায় ৪–৬: লিস্ট বিল্ডিং টুলস ও ফর্ম</li>
+          <li>📖 অধ্যায় ৭–৯: কপি রাইটিং + মনস্তত্ত্ব</li>
+          <li>📖 অধ্যায় ১০–১২: অটোমেশন ও ফানেল</li>
+          <li>📖 অধ্যায় ১৩–১৪: ডেলিভারেবিলিটি ও স্কেলিং</li>
+          <li>🧰 বোনাস: ১২+ টেমপ্লেট, ২০+ ইমেইল স্ক্রিপ্ট, চেকলিস্ট</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>বোনাস রিসোর্স</h3>
+        <ul class="list">
+          <li>🗂️ CSV টেমপ্লেট (লিস্ট ইমপোর্ট)</li>
+          <li>📝 সাবজেক্ট লাইন সুইপফাইল (১০০+)</li>
+          <li>📊 কনভার্সন ট্র্যাকার (Google Sheet)</li>
+          <li>🎯 ৩০ দিনের ইমেইল ক্যালেন্ডার</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <h3 style="margin-bottom:16px">ব্যবহারকারীরা যা বলছেন</h3>
+      <div class="grid-3">
+        <div class="testimonial">“এই ই-বুক ফলো করেই আমাদের ওপেন-রেট ২১% → ৩৬% হয়েছে!”
+          <div class="author">— সাব্বির, ই-কমার্স</div>
+        </div>
+        <div class="testimonial">“ওয়েলকাম সিরিজ টেমপ্লেট ব্যবহার করে প্রথম সপ্তাহেই ৪৮,০০০ টাকা সেলস।”
+          <div class="author">— রুখসানা, কোর্স ক্রিয়েটর</div>
+        </div>
+        <div class="testimonial">“ডেলিভারেবিলিটি চেকলিস্টটা গেম-চেঞ্জার।”
+          <div class="author">— শাহীদ, এজেন্সি মালিক</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Buy -->
+  <section id="buy" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h3>আজই অ্যাক্সেস নিন</h3>
+        <div class="price"><span class="now">৳৪৯৯</span> <span class="old">৳৯৯৯</span> <span class="badge">আজকের অফার</span></div>
+        <p style="color:#cbd5e1">PDF, মোবাইল/PC-এ পড়া যাবে • আজীবন আপডেট</p>
+        <div class="hero-cta" style="margin-top:10px">
+          <a class="btn" href="https://your-payment-link.com" target="_blank" rel="noopener">🔐 কার্ড/নগদে পেমেন্ট</a>
+          <a class="btn outline" href="#bkash">📱 bKash/Nagad নির্দেশনা</a>
+        </div>
+        <div class="payment-logos" style="margin-top:14px">
+          <img alt="bKash" src="bkash.png" height="24" />
+          <img alt="Nagad" src="nagad.png" height="24" />
+          <img alt="Rocket" src="rocket.png" height="24" />
+          <img alt="Visa" src="visa.png" height="24" />
+          <img alt="Mastercard" src="mastercard.png" height="24" />
+        </div>
+        <div class="guarantee" style="margin-top:16px">💸 ৭ দিনের মানি-ব্যাক গ্যারান্টি – যেকোনো কারণে সন্তুষ্ট না হলে ইমেইল করলেই রিফান্ড।</div>
+      </div>
+      <div class="card" id="bkash">
+        <h3>মোবাইল পেমেন্ট (bKash/Nagad)</h3>
+        <ol style="margin:0 0 12px 18px;line-height:1.8">
+          <li>bKash/Nagad অ্যাপ খুলুন</li>
+          <li>Send Money / Payment এ যান</li>
+          <li>এই নম্বরে পেমেন্ট করুন: <strong>01XXXXXXXXX</strong></li>
+          <li>Amount: <strong>৳৪৯৯</strong>, Reference: <strong>EMM</strong></li>
+          <li>পেমেন্টের স্ক্রিনশট ও আপনার ইমেইল ঠিকানা পাঠান: <strong>support@yourbrand.com</strong></li>
+        </ol>
+        <p style="color:#93c5fd">অথবা ফর্মে সাবমিট করুন, আমরা ১০ মিনিটে ডাউনলোড লিংক পাঠাবো।</p>
+        <form onsubmit="event.preventDefault();alert('ধন্যবাদ! আমরা আপনার ইমেইলে পাঠিয়ে দেব।');this.reset();" style="display:grid;gap:10px">
+          <input required placeholder="আপনার পূর্ণ নাম" style="padding:12px;border-radius:10px;border:1px solid #1f2e46;background:#0b1326;color:#e2e8f0" />
+          <input required type="email" placeholder="আপনার ইমেইল" style="padding:12px;border-radius:10px;border:1px solid #1f2e46;background:#0b1326;color:#e2e8f0" />
+          <input required placeholder="ট্রানজ্যাকশন আইডি" style="padding:12px;border-radius:10px;border:1px solid #1f2e46;background:#0b1326;color:#e2e8f0" />
+          <button class="btn" type="submit">📥 ডাউনলোড লিংক চাই</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Author -->
+  <section class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h3>লেখক পরিচিতি</h3>
+        <p style="color:#cbd5e1">১০+ বছরের ইমেইল মার্কেটিং অভিজ্ঞতা। ৫০+ ব্র্যান্ডকে ৭-ফিগার ইমেইল রেভিনিউ পেতে সহায়তা। এই বইতে বাস্তব প্রজেক্টের কৌশলগুলো সহজ ভাষায় সাজানো।</p>
+      </div>
+      <div class="card">
+        <h3>কেন এই ই-বুক আলাদা?</h3>
+        <ul class="list">
+          <li>🧪 শুধু থিয়োরি নয়—বাস্তব টেস্টেড পদ্ধতি</li>
+          <li>🧰 কপি-পেস্ট টেমপ্লেট</li>
+          <li>📈 ছোট বাজেটে স্কেলিং গাইড</li>
+          <li>🔄 ফ্রি আপডেট ও সাপোর্ট</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <h3 style="margin-bottom:12px">প্রশ্ন ও উত্তর (FAQ)</h3>
+      <div class="faq">
+        <details open>
+          <summary>কোন ফরম্যাটে পাবো?</summary>
+          <p>হাই-কোয়ালিটি PDF, মোবাইল/ট্যাব/PC—সব জায়গায় পড়া যাবে।</p>
+        </details>
+        <details>
+          <summary>কীভাবে ডাউনলোড করবো?</summary>
+          <p>পেমেন্ট সফল হলে সাথে সাথে ইমেইলে ডাউনলোড লিংক যাবে। bKash/Nagad দিলে ফর্ম সাবমিট করলে ১০ মিনিটে পাঠানো হবে।</p>
+        </details>
+        <details>
+          <summary>রিফান্ড কিভাবে পাব?</summary>
+          <p>কেনার ৭ দিনের মধ্যে <em>support@yourbrand.com</em> এ ইমেইল করলেই রিফান্ড।</p>
+        </details>
+        <details>
+          <summary>কোন টুলস কভার করা হয়েছে?</summary>
+          <p>Mailchimp, Brevo, Klaviyo-এর বেসিক সেটআপ, ডেলিভারেবিলিটি, অটোমেশন ফ্লো ও ট্র্যাকিং।</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample -->
+  <section id="sample" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h3>ফ্রি স্যাম্পল (৫ পৃষ্ঠা)</h3>
+        <p style="color:#cbd5e1">কিনবার আগে দেখুন। নিচের বাটনে ক্লিক করলে স্যাম্পল PDF খুলবে।</p>
+        <a class="btn" href="sample.pdf" target="_blank" rel="noopener">📄 স্যাম্পল ডাউনলোড</a>
+      </div>
+      <div class="card">
+        <h3>প্রাইভেসি ও সিকিউরিটি</h3>
+        <p style="color:#cbd5e1">আমরা আপনার তথ্য সুরক্ষিত রাখি। কোনোভাবেই তৃতীয় পক্ষের সাথে শেয়ার করা হয় না। SSL সিকিউর পেমেন্ট।</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container grid-3">
+      <div>
+        <strong>ইমেইল মার্কেটিং মাস্টারি</strong>
+        <p>© ২০২৫ আপনার ব্র্যান্ড • সব অধিকার সংরক্ষিত</p>
+      </div>
+      <div>
+        <p><a href="#buy">কেনার নিয়ম</a> • <a href="#">টার্মস</a> • <a href="#">প্রাইভেসি</a></p>
+        <p>যোগাযোগ: <a href="mailto:support@yourbrand.com">support@yourbrand.com</a></p>
+      </div>
+      <div>
+        <p>ডাউনলোড/সাপোর্ট সমস্যা? <a href="#bkash">ফর্ম পূরণ করুন</a></p>
+        <div class="payment-logos"><img alt="SSL" src="ssl.png" height="22" /> <img alt="Stripe" src="stripe.png" height="22" /></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Support Buttons -->
+  <div class="support-float">
+    <a title="WhatsApp" href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener">💬</a>
+    <a title="Messenger" href="https://m.me/yourpage" target="_blank" rel="noopener" style="background:#3b82f6">✉️</a>
+  </div>
+
+  <!-- Optional: Analytics/Pixel placeholders -->
+  <!-- <script>/* Meta Pixel / GA4 here */</script> -->
+</body>
+</html>
